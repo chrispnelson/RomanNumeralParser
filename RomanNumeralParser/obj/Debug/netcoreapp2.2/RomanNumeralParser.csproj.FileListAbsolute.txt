@@ -1,0 +1,11 @@
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/netcoreapp2.2/RomanNumeralParser.deps.json
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/netcoreapp2.2/RomanNumeralParser.runtimeconfig.json
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/netcoreapp2.2/RomanNumeralParser.runtimeconfig.dev.json
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/netcoreapp2.2/RomanNumeralParser.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/netcoreapp2.2/RomanNumeralParser.pdb
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.csprojAssemblyReference.cache
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.csproj.CoreCompileInputs.cache
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.AssemblyInfoInputs.cache
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.AssemblyInfo.cs
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/netcoreapp2.2/RomanNumeralParser.pdb
