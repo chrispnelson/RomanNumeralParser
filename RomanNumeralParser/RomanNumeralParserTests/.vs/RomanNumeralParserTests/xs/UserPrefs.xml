@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{4121E540-529C-40F3-B7FD-137FE8B4BEEE}|Default">
+  <MonoDevelop.Ide.ItemProperties.RomanNumeralParserTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTest1.cs">
+    <Files>
+      <File FileName="UnitTest1.cs" Line="17" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RomanNumeralParserTests" expanded="True">
+            <Node name="RomanNumeralParserTests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Microsoft.NET.Test.Sdk" selected="True" />
+                </Node>
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="RomanNumeralParserTests" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

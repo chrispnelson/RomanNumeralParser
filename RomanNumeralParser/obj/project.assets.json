@@ -708,6 +708,7 @@
         "netcoreapp2.2"
       ],
       "sources": {
+        "/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/NUnit": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -16,6 +16,13 @@ namespace RomanNumeralParser
             D = 500,
             M = 1000
         }
+
+        public struct accumulators
+        {
+            public long subtractive;
+            public long additive;
+            public long irregularSubtractive;
+        }
         
         static List<int> numbersOutput { get; set; }
         static Dictionary<Numerals, Char> numeralPairs { get; set; }
@@ -26,9 +33,9 @@ namespace RomanNumeralParser
             Console.WriteLine("Roman Numeral Parser - CP Nelson v1.0");
             string input = GetStringToken();
 
-            DiassembleStringToTokens(input);
+            numbersOutput = DiassembleStringToTokens(input);
 
-            WriteIntTokens();
+            WriteIntTokens(numbersOutput);
         }
 
         static Dictionary<Numerals, Char> SetNumeralPairs()
@@ -54,19 +61,22 @@ namespace RomanNumeralParser
             return input;
         }
 
-        static void WriteIntTokens()
+        static void WriteIntTokens(List<int> intVals)
         {
-            foreach (var IntToken in numbersOutput)
+            foreach (var IntToken in intVals)
             {
                 Console.WriteLine(IntToken);
             }
         }
 
-        static void DiassembleStringToTokens(string Inputs)
+        static List<int> DiassembleStringToTokens(string Inputs)
         {
+            List<int> retInts = new List<int>();
             Char[] glyphs = Inputs.ToCharArray();
 
-            numbersOutput = ConvertToInt(glyphs);
+            retInts = ConvertToInt(glyphs);
+
+            return retInts;
         }
 
         static List<int> ConvertToInt(Char[] glyphs)
@@ -117,24 +127,5 @@ namespace RomanNumeralParser
 
         }
 
-        static bool IsSubtractiveToken(string Token)
-        {
-            return false;
-        }
-
-        static bool IsAdditiveToken(string Token)
-        {
-            return false;
-        }
-
-        static int additiveNumerics(int[] integerValues)
-        {
-            return 0;
-        }
-
-        static int subtractiveNumerics(int[] integerValues)
-        {
-            return 0;
-        }
     }
 }

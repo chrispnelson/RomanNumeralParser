@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParser.csproj": {}
+    "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParserTests/RomanNumeralParserTests.csproj": {}
   },
   "projects": {
-    "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParser.csproj": {
+    "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParserTests/RomanNumeralParserTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParser.csproj",
-        "projectName": "RomanNumeralParser",
-        "projectPath": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParser.csproj",
+        "projectUniqueName": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParserTests/RomanNumeralParserTests.csproj",
+        "projectName": "RomanNumeralParserTests",
+        "projectPath": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParserTests/RomanNumeralParserTests.csproj",
         "packagesPath": "/Users/christopher/.nuget/packages/",
-        "outputPath": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/",
+        "outputPath": "/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/RomanNumeralParserTests/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -40,11 +40,23 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
             }
           },
           "imports": [
