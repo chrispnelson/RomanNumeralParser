@@ -23,6 +23,7 @@
           "netcoreapp2.2"
         ],
         "sources": {
+          "/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/NUnit": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +40,95 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.NETCore.Targets": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.Build": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.CLI": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.ObjectModel": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.Portable": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.TestHost": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.TestPlatform.TranslationLayer": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.UnitTestFramework.Extensions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "NUnit.Engine": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "NUnit.Extension.NUnitProjectLoader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "NUnit.Extension.NUnitV2Driver": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "NUnit.Extension.NUnitV2ResultWriter": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "NUnit.Extension.TeamCityEventListener": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "NUnit.Extension.VSProjectLoader": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SpecFlow.NUnit.Runners": {
+              "target": "Package",
+              "version": "[3.0.225, )"
             }
           },
           "imports": [

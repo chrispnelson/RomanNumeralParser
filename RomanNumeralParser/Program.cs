@@ -20,15 +20,36 @@ namespace RomanNumeralParser
         static List<int> numbersOutput { get; set; }
         static Dictionary<Numerals, Char> numeralPairs { get; set; }
 
-        static void Main(string[] args)
+        public struct accumulators
+        {
+            public long subtractiveNum;
+            public long additiveNum;
+        }
+
+         void Main(string[] args)
         {
             numeralPairs = SetNumeralPairs();
-            Console.WriteLine("Roman Numeral Parser - CP Nelson v1.0");
-            string input = GetStringToken();
+            accumulators accum;
+            bool done = false;
 
-            DiassembleStringToTokens(input);
+            while (true)
+            {
+                Console.WriteLine("Roman Numeral Parser - CP Nelson v1.0");
+                string input = GetStringTokensFromInput();
 
-            WriteIntTokens();
+                numbersOutput = DiassembleStringToTokens(input);
+
+                accum = AssembleOutput(numbersOutput);
+
+                WriteIntTokens(numbersOutput, accum, input);
+
+                done = IsDone();
+
+                if (done)
+                {
+                    break;
+                }
+            }
         }
 
         static Dictionary<Numerals, Char> SetNumeralPairs()
@@ -46,27 +67,61 @@ namespace RomanNumeralParser
             return localSet;
         }
 
-        static string GetStringToken()
+        public static string GetStringTokensFromInput(string inputs = "\0", bool testMode = false)
         {
-            Console.Write("Please input a roman Numeral to convert to integer:");
-            string input = Console.ReadLine();
+            string input;
 
-            return input;
+            Console.WriteLine("[GUIDE]\n");
+            Console.WriteLine("Supported base 10 Roman Numeral glyphs: ");
+            Console.WriteLine("M = 1000; D = 500; C = 100; L = 50; X = 10; V = 5; I = 1");
+            Console.WriteLine("Lower case converts to upper.");
+            Console.WriteLine("Unsupported glyphs are evaluated as 0 (ZERO).");
+            Console.WriteLine("\n[Subtractive notation] is single pair regular subtractive notation only (e.g. IV = 4, CD = 400),");
+            Console.WriteLine("and NOT (ISN) irregular subtractive notation (e.g. IIIX = 7 is not supported notation).");
+            Console.WriteLine("Inverse order inputting will result in a regular subtractive tally.");
+            Console.WriteLine("For regular subtractive notation calculations (E.G. IVX = (-1 + -5 + 10) = 4 and NOT 6).");
+            Console.WriteLine("\n[Additive notation], performs simple addition on glyphs. Useful for simple numbers.");
+            Console.Write("\n\nInput Roman Numeral to convert to integer: ");
+
+            //if (inputs.Length <= 0 || String.IsNullOrEmpty(inputs) || inputs.Equals("\0"))
+            // if (testMode == false)
+            // {
+            //     input = Console.ReadLine();
+            // }
+            // else
+            // {
+            //     input = inputs;
+            // }
+
+            input = Console.ReadLine();
+
+            return input.Replace(" ", "").ToUpper();
         }
 
-        static void WriteIntTokens()
+        static void WriteIntTokens(List<int> numbers, accumulators accum, string inputString)
         {
-            foreach (var IntToken in numbersOutput)
+            Console.WriteLine("Numeral Input: " + inputString);
+            Console.WriteLine("Token Raw Val: ");
+
+            foreach (var IntToken in numbers)
             {
-                Console.WriteLine(IntToken);
+                Console.Write("\t" + IntToken);
             }
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Subtractive Notation Value:" + accum.subtractiveNum);
+            Console.WriteLine("Additive Notation Value:" + accum.additiveNum);
         }
 
-        static void DiassembleStringToTokens(string Inputs)
+        static List<int> DiassembleStringToTokens(string Inputs)
         {
             Char[] glyphs = Inputs.ToCharArray();
+            List<int> numOutput = new List<int>();
 
-            numbersOutput = ConvertToInt(glyphs);
+            numOutput = ConvertToInt(glyphs);
+
+            return numOutput;
         }
 
         static List<int> ConvertToInt(Char[] glyphs)
@@ -112,29 +167,52 @@ namespace RomanNumeralParser
             return (int)numerals;
         }
 
-        static void AssembleOutput(string Tokens, int[] Numerics)
+        static accumulators AssembleOutput(List<int> numbersSet)
         {
+            int current;
+            int next;
+            int Size = numbersSet.Count;
+            accumulators retAccum;
 
+            retAccum.subtractiveNum = 0;
+            retAccum.additiveNum = 0;
+
+            for (current = 0; current < Size; current++)
+            {
+                next = current + 1;
+
+                if (next < Size)
+                {
+                    if (numbersSet[current] < numbersSet[next])
+                    {
+                        retAccum.subtractiveNum = retAccum.subtractiveNum + (-numbersSet[current]);
+                        retAccum.additiveNum = retAccum.additiveNum + numbersSet[current];
+                    }
+                    else
+                    {
+                        retAccum.subtractiveNum = retAccum.subtractiveNum + numbersSet[current];
+                        retAccum.additiveNum = retAccum.additiveNum + numbersSet[current];
+                    }
+                }
+                else
+                {
+                    retAccum.subtractiveNum = retAccum.subtractiveNum + numbersSet[current];
+                    retAccum.additiveNum = retAccum.additiveNum + numbersSet[current];
+                }
+            }
+
+            return retAccum;
         }
 
-        static bool IsSubtractiveToken(string Token)
+        static bool IsDone()
         {
-            return false;
-        }
+            Console.Write("If Done, press [Q|q]! : ");
 
-        static bool IsAdditiveToken(string Token)
-        {
-            return false;
-        }
+            char KEY = (char)Console.Read();
+            char[] QUITCHAR = { 'Q', 'q' };
+            char[] TESTCHAR = { 'T', 't' };
 
-        static int additiveNumerics(int[] integerValues)
-        {
-            return 0;
-        }
-
-        static int subtractiveNumerics(int[] integerValues)
-        {
-            return 0;
+            return KEY.Equals(QUITCHAR[0]) || KEY.Equals(QUITCHAR[1]);
         }
     }
 }

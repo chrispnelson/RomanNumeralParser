@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{2F734BC7-6DDC-405E-B8B3-6B83F1973369}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestClass_RomanNumeralGenerator.cs">
     <Files>
-      <File FileName="Program.cs" Line="55" Column="10" />
+      <File FileName="Program.cs" Line="213" Column="23" />
+      <File FileName="TestClass_RomanNumeralGenerator.cs" Line="282" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RomanNumeralParser" expanded="True">
             <Node name="RomanNumeralParser" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="ko" expanded="True" />
+              <Node name="TestClass_RomanNumeralGenerator.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
