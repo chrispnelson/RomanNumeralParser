@@ -1,0 +1,17 @@
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/NUnit3.TestAdapter.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/NUnit3.TestAdapter.pdb
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/nunit.engine.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/nunit.engine.api.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.exe.config
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.exe
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.pdb
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/Microsoft.Office.Interop.Excel.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/bin/Debug/net471/nunit.framework.dll
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.exe.config
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.csproj.CoreCompileInputs.cache
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.AssemblyInfoInputs.cache
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.AssemblyInfo.cs
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.csproj.CopyComplete
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.exe
+/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.pdb

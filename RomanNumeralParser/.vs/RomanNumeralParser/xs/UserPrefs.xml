@@ -1,26 +1,23 @@
 ﻿<Properties StartupConfiguration="{2F734BC7-6DDC-405E-B8B3-6B83F1973369}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="78" Column="1" />
+      <File FileName="Program.cs" Line="98" Column="1" />
+      <File FileName="Tests/Tests.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RomanNumeralParser" expanded="True">
             <Node name="RomanNumeralParser" expanded="True">
-              <Node name="Dependencies" expanded="True" selected="True">
-                <Node name="SdkDependencies" expanded="True" />
-              </Node>
-              <Node name="RomanNumeralParserTests" expanded="True">
-                <Node name="bin" expanded="True">
-                  <Node name="Debug" expanded="True">
-                    <Node name="netcoreapp2.2" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="obj" expanded="True" />
-              </Node>
+              <Node name="Tests" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="RomanNumeralParser" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
