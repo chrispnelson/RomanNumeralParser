@@ -59,22 +59,15 @@ public class Test
     [TearDown]
     public void TearDown()
     {
-        helper.exHelper.CloseExcel(helper.exFile);
+        //helper.exHelper.CloseExcel(helper.exFile);
     }
 
     [Test]
     public void Test_TestRunnerExecute()
     {
-        Assert.AreSame(1, 1);
+        Assert.IsTrue(true);
     }
 
-    [Test, TestCaseSource("helper.testData.testdata")]
-    public void Test_GetInputMethod(string inputs)
-    {
-        Assert.That(inputs, Is.Not.Empty);
-
-        Console.WriteLine(inputs);
-    }
 }
 
 public class ExcelHelperClass

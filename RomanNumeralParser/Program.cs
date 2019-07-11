@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Program
+namespace RomanNumeralParser
+{
+    class Program
 {
     public enum Numerals
     {
@@ -259,4 +261,5 @@ class Program
         return KEY.Equals(QUITCHAR[0]) || KEY.Equals(QUITCHAR[1]);
     }
 
+}
 }

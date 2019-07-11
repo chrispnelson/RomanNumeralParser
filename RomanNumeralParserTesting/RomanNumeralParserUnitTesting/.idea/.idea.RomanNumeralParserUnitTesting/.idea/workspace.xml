@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59e26d35-a21d-444d-a7c4-eca627a3fc97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../RomanNumeralParser/ProgramUnitTest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../RomanNumeralParser/Program_UnitTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RomanNumeralParsing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/project-cache/RomanNumeralParser-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/project-cache/RomanNumeralParser-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/.vs/RomanNumeralParser/xs/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/RomanNumeralParser.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/RomanNumeralParser.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/Tests/TestInputData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/Tests/TestInputData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/Tests/Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/Tests/Tests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/Tests/~$TestInputData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/bin/Debug/net471/RomanNumeralParser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanNumeralParser/obj/Debug/net471/RomanNumeralParser.pdb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RomanNumeralParsing.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <marker date="1562794373817" expanded="false" signature="6:47" ph="..." />
+                <marker date="1562794373817" expanded="true" signature="77:8879" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="97:8877" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="132:315" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="351:488" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="538:866" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="907:970" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="998:1931" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="1351:1818" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="1961:2188" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="1996:2178" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="2101:2164" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="2249:2685" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="2720:3806" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="3846:4151" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4015:4087" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4206:4345" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4262:4335" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4411:4604" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4658:4899" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4773:4857" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="4953:5274" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5066:5239" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5126:5225" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5324:5417" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5463:5529" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5592:5646" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5741:6296" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="5912:5988" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="6362:8243" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="6785:7676" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="6869:7437" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="6951:7174" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="7199:7419" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="7458:7662" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="7807:7881" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="7961:8048" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="8274:8870" ph="{...}" />
+                <marker date="1562794373817" expanded="true" signature="8729:8788" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnitTest1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1562792975253" expanded="false" signature="6:36" ph="..." />
+                <marker date="1562792975253" expanded="true" signature="53:2344" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="78:2342" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="210:348" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="268:337" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="392:439" ph="{...}" />
+                <marker date="1562792975253" expanded="false" signature="449:1877" ph="TEST_FLOATMATH" />
+                <marker date="1562792975253" expanded="true" signature="1565:1858" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="2015:2336" ph="{...}" />
+                <marker date="1562792975253" expanded="true" signature="2188:2292" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RomanNumeralParsing.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1200" />
+    <option name="height" value="1856" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="FileSystemExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea.RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea.RomanNumeralParserUnitTesting" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59e26d35-a21d-444d-a7c4-eca627a3fc97" name="Default Changelist" comment="" />
+      <created>1562794465863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562794465863</updated>
+      <workItem from="1562794468694" duration="112000" />
+      <workItem from="1562794623566" duration="95000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="207000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1200" height="1856" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.253886" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="14" visible="true" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/UnitTest1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1562792975253" expanded="false" signature="6:36" ph="..." />
+            <marker date="1562792975253" expanded="true" signature="53:2344" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="78:2342" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="210:348" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="268:337" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="392:439" ph="{...}" />
+            <marker date="1562792975253" expanded="false" signature="449:1877" ph="TEST_FLOATMATH" />
+            <marker date="1562792975253" expanded="true" signature="1565:1858" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="2015:2336" ph="{...}" />
+            <marker date="1562792975253" expanded="true" signature="2188:2292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RomanNumeralParsing.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <marker date="1562794373817" expanded="false" signature="6:47" ph="..." />
+            <marker date="1562794373817" expanded="true" signature="77:8879" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="97:8877" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="132:315" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="351:488" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="538:866" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="907:970" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="998:1931" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="1351:1818" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="1961:2188" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="1996:2178" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="2101:2164" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="2249:2685" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="2720:3806" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="3846:4151" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4015:4087" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4206:4345" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4262:4335" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4411:4604" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4658:4899" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4773:4857" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="4953:5274" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5066:5239" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5126:5225" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5324:5417" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5463:5529" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5592:5646" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5741:6296" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="5912:5988" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="6362:8243" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="6785:7676" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="6869:7437" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="6951:7174" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="7199:7419" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="7458:7662" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="7807:7881" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="7961:8048" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="8274:8870" ph="{...}" />
+            <marker date="1562794373817" expanded="true" signature="8729:8788" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

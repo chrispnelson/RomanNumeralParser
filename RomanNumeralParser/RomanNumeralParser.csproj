@@ -12,12 +12,19 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
-    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1000" />
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <Compile Remove="Tests\Tests.cs" />
+    <Compile Remove="Tests\excelApp.cs" />
+    <Compile Remove="Program_UnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tests\" />
+    <None Remove="Program.UnitTest" />
+    <None Remove="ProgramUnitTest" />
+    <None Remove="Tests\TestInputData.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore" Version="5.0.0" />
   </ItemGroup>
 </Project>
