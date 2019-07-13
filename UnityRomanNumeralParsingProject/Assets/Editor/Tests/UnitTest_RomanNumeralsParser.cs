@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit;
@@ -67,7 +68,7 @@ namespace RomanNumeralParser.UnitTests
             Assert.Pass();
         }
         
-        #region TestMethodHelbers
+        #region TestMethodHelpers
         int TestHelper_ConvertNumeralCharToInt(char NumeralItem)
         {
             int returnInt = 0;
@@ -99,8 +100,87 @@ namespace RomanNumeralParser.UnitTests
 
             return returnVal;
         }
+        
+        int TestHelper_CalculateSubtractiveValue_Calculate(List<int> inputCharsIntVals)
+        {
+            int current;
+            int next;
+            int Size = inputCharsIntVals.Count;
+            int returnInt = 0;
+            
+            for (current = 0; current < Size; current++)
+            {
+                next = current + 1;
+
+                if (next < Size)
+                {
+                    if (inputCharsIntVals[current] < inputCharsIntVals[next])
+                    {
+                        returnInt = returnInt + (-inputCharsIntVals[current]);
+                    }
+                    else
+                    {
+                        returnInt = returnInt + inputCharsIntVals[current];
+                    }
+                }
+                else
+                {
+                    returnInt = returnInt + inputCharsIntVals[current];
+                }
+            }
+
+            return returnInt;
+        }
         #endregion
 
+        #region TestInit
+
+        [Test]
+        public void Test_Init_TakesNoPrameters_ReturnsInitialisedAttributes()
+        {
+            /*Arrange*/
+            ConvertRomanNumeralsToInts.Attibutes TestAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            List<int> LocalIntList = new List<int>();
+            Dictionary<ConvertRomanNumeralsToInts.Numerals, char> LocalDicSet =
+                new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
+            
+            /*Act*/
+            TestAttributes = TestingRomanNumeralParser.Init();
+            LocalIntList = TestAttributes.numbersOutput;
+            LocalDicSet = TestAttributes.numeralPairs;
+            
+            /*Assert*/            
+//            Assert.IsNotNull(TestAttributes);
+//            Assert.IsNotNull(TestAttributes.numbersOutput);
+//            Assert.IsNotNull(TestAttributes.numeralPairs);
+            Assert.That(TestAttributes.input, Is.TypeOf(typeof(string)));
+            Assert.That(TestAttributes.done, Is.TypeOf(typeof(bool)));
+            Assert.That(TestAttributes.accumulators.subtractive, Is.TypeOf(typeof(long)));
+            Assert.That(TestAttributes.accumulators.additive, Is.TypeOf(typeof(long)));
+            Assert.That(TestAttributes.accumulators.irregular, Is.TypeOf(typeof(long)));
+            CollectionAssert.AreEquivalent(TestAttributes.numbersOutput, LocalIntList);
+            CollectionAssert.AreEquivalent(TestAttributes.numeralPairs, LocalDicSet);
+            CollectionAssert.AllItemsAreInstancesOfType(TestAttributes.numbersOutput, typeof(int));
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.I), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.V), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.X), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.L), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.C), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.D), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.M), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsKey(ConvertRomanNumeralsToInts.Numerals.NONE), Is.False);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('I'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('V'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('X'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('L'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('C'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('D'), Is.True);
+            Assert.That(TestAttributes.numeralPairs.ContainsValue('M'), Is.True);
+        }
+
+        #endregion
+        
+        #region TestGetNumerals
         [Test]
         [TestCase('I', ExpectedResult = ConvertRomanNumeralsToInts.Numerals.I)]
         [TestCase('V', ExpectedResult = ConvertRomanNumeralsToInts.Numerals.V)]
@@ -215,9 +295,9 @@ namespace RomanNumeralParser.UnitTests
             
             return TestValNumerals;
         }
-
+        #endregion
         
-        #region ConvertNumeralsToInts
+        #region TestConvertToInts
         
         [Test]
         [TestCase(new char[] {'I'}, ExpectedResult = true)]
@@ -350,7 +430,7 @@ namespace RomanNumeralParser.UnitTests
         }
         #endregion
 
-        #region GetInputTests
+        #region TestGetInput
         
         [Test]
         [TestCase("mcmxiv", ExpectedResult = true)]
@@ -381,38 +461,7 @@ namespace RomanNumeralParser.UnitTests
         }
         #endregion
 
-        #region SubtractiveNotationConversionTest
-
-        int TestHelper_CalculateSubtractiveValue_Calculate(List<int> inputCharsIntVals)
-        {
-            int current;
-            int next;
-            int Size = inputCharsIntVals.Count;
-            int returnInt = 0;
-            
-            for (current = 0; current < Size; current++)
-            {
-                next = current + 1;
-
-                if (next < Size)
-                {
-                    if (inputCharsIntVals[current] < inputCharsIntVals[next])
-                    {
-                        returnInt = returnInt + (-inputCharsIntVals[current]);
-                    }
-                    else
-                    {
-                        returnInt = returnInt + inputCharsIntVals[current];
-                    }
-                }
-                else
-                {
-                    returnInt = returnInt + inputCharsIntVals[current];
-                }
-            }
-
-            return returnInt;
-        }
+        #region TestCalculateSubtractiveValue
 
         [Test]
         [TestCase(new char[] {'I'}, ExpectedResult = 1)]

@@ -222,7 +222,6 @@
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/System.Configuration.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/System.EnterpriseServices.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/System.Transactions.dll
-/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/System.Diagnostics.Tracing.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Boo.Lang.Compiler.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Boo.Lang.PatternMatching.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Boo.Lang.Parser.dll
@@ -230,7 +229,6 @@
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Unity.Cecil.Pdb.dll
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Unity.Cecil.Mdb.dll
-/Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/UnityEngine.dll.mdb
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/UnityEngine.xml
 /Users/christopher/Documents/gitroot/InterviewProjects/RomanNumeralParser/UnityRomanNumeralParsingProject/Temp/bin/Debug/UnityEditor.dll.mdb

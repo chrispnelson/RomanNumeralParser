@@ -6,6 +6,10 @@ namespace RomanNumeralParser.Converter
 {
     public class ConvertRomanNumeralsToInts
     {
+        ////////////////////////
+        ///// ATTRIBUTES  //////
+        ////////////////////////
+        
         public enum Numerals
         {
             NONE = 0,
@@ -33,16 +37,25 @@ namespace RomanNumeralParser.Converter
             public bool done;
             public Accumulators accumulators;
         }
+        
+        ////////////////////////
+        //// CONSTRUCTOR  //////
+        ////////////////////////
 
         public ConvertRomanNumeralsToInts()
         {
             this.Init();
         }
+        
+        ////////////////////////
+        /////// PUBLIC  ////////
+        ////////////////////////
 
         public Attibutes Init()
         {
             Attibutes attribs = new Attibutes();
             
+            attribs.numbersOutput = new List<int>();
             attribs.numeralPairs = new Dictionary<Numerals, char>(); 
             attribs.numeralPairs = SetNumeralPairs();
             attribs.input = "";
@@ -74,49 +87,9 @@ namespace RomanNumeralParser.Converter
             return attribs;
         }
 
-        public static Dictionary<Numerals, char> SetNumeralPairs()
-        {
-            Dictionary<Numerals, char> DictlocalSet = new Dictionary<Numerals, char>(); 
-
-            DictlocalSet.Add(Numerals.I, 'I');
-            DictlocalSet.Add(Numerals.V, 'V');
-            DictlocalSet.Add(Numerals.X, 'X');
-            DictlocalSet.Add(Numerals.L, 'L');
-            DictlocalSet.Add(Numerals.C, 'C');
-            DictlocalSet.Add(Numerals.D, 'D');
-            DictlocalSet.Add(Numerals.M, 'M');
-
-            return DictlocalSet;
-        }
-
-        private static void PostHelpMSG()
-        {
-            Debug.Log(
-                "[HELP INFO GUIDE]\n" +
-                "Supported base 10 Roman Numeral glyphs: " +
-                "M = 1000; D = 500; C = 100; L = 50; X = 10; V = 5; I = 1" +
-                "Lower case converts to upper." +
-                "Unsupported glyphs are evaluated as 0 (ZERO)." +
-                "\n[Subtractive notation] is lower value before higher value, input left to right left to right in " +
-                "single pair regular subtractive notation only (e.g. IV = 4, CD = 400), " +
-                "[(ISN) Irregular Subtractive Notation] works for small values, but is not fully supported notation (e.g. IIIX = 7)." +
-                "Inverse order inputting will result in a regular subtractive tally." +
-                "For regular subtractive notation calculations (E.G. IVX = (-1 + -5 + 10) = 4)." +
-                "\n[Additive notation], performs simple addition on glyphs. Useful for simple numbers.\n"
-            );
-        }
-
         public string GetCleanedStringToken(string InputString = "")
         {
             return InputString.Replace(" ", "").ToUpper();
-        }
-
-        public void WriteIntTokens(List<int> intVals)
-        {
-            foreach (var IntToken in intVals)
-            {
-                Debug.Log(IntToken);
-            }
         }
 
         public List<int> DiassembleStringToIntTokens(string Inputs)
@@ -128,7 +101,12 @@ namespace RomanNumeralParser.Converter
 
             return retInts;
         }
-
+        
+        public int GetIntValue(char numeral)
+        {
+            return (int)GetNumerals(numeral);
+        }
+        
         public List<int> ConvertToInts(char[] glyphs)
         {
             int Size = glyphs.Length;
@@ -163,37 +141,6 @@ namespace RomanNumeralParser.Converter
             }
 
             return key;
-        }
-
-        public int GetIntValue(Numerals numeral)
-        {
-            return (int)GetNumerals(SetNumeralPairs()[numeral]);
-        }
-
-        public int GetIntValue(char numeral)
-        {
-            return (int)GetNumerals(numeral);
-        }
-
-        public void WriteIntTokens(Attibutes attributeSet)
-        {
-            string loggingOutput = "[RESULTS]\n";
-
-            loggingOutput = loggingOutput + "Numeral Input: " + attributeSet.input + "\n";
-            loggingOutput = loggingOutput + "Token Raw Val: " + "\n";
-
-            foreach (var IntToken in attributeSet.numbersOutput)
-            {
-                loggingOutput = loggingOutput + " " + IntToken;
-            }
-
-            loggingOutput = loggingOutput + "\n";
-
-            loggingOutput = loggingOutput + "Subtractive Notation Value: " + attributeSet.accumulators.subtractive + "\n";
-            loggingOutput = loggingOutput + "Additive Notation Value: " + attributeSet.accumulators.additive + "\n";
-            loggingOutput = loggingOutput + "Irregular Subtractive Notation Value: " + attributeSet.accumulators.irregular + "\n";
-            
-            Debug.Log(loggingOutput);
         }
 
         public Accumulators CalculateAdditiveValue(Accumulators acumulatorSet, List<int> numbersSet)
@@ -301,13 +248,68 @@ namespace RomanNumeralParser.Converter
 
             return retAccum;
         }
+        
+        ////////////////////////
+        /////// PRIVATE  ///////
+        ////////////////////////
+        
+        private static Dictionary<Numerals, char> SetNumeralPairs()
+        {
+            Dictionary<Numerals, char> DictlocalSet = new Dictionary<Numerals, char>(); 
 
+            DictlocalSet.Add(Numerals.I, 'I');
+            DictlocalSet.Add(Numerals.V, 'V');
+            DictlocalSet.Add(Numerals.X, 'X');
+            DictlocalSet.Add(Numerals.L, 'L');
+            DictlocalSet.Add(Numerals.C, 'C');
+            DictlocalSet.Add(Numerals.D, 'D');
+            DictlocalSet.Add(Numerals.M, 'M');
 
-        public bool IsDone()
+            return DictlocalSet;
+        }
+        
+        private void WriteIntTokens(Attibutes attributeSet)
+        {
+            string loggingOutput = "[RESULTS]\n";
+
+            loggingOutput = loggingOutput + "Numeral Input: " + attributeSet.input + "\n";
+            loggingOutput = loggingOutput + "Token Raw Val: " + "\n";
+
+            foreach (var IntToken in attributeSet.numbersOutput)
+            {
+                loggingOutput = loggingOutput + " " + IntToken;
+            }
+
+            loggingOutput = loggingOutput + "\n";
+
+            loggingOutput = loggingOutput + "Subtractive Notation Value: " + attributeSet.accumulators.subtractive + "\n";
+            loggingOutput = loggingOutput + "Additive Notation Value: " + attributeSet.accumulators.additive + "\n";
+            loggingOutput = loggingOutput + "Irregular Subtractive Notation Value: " + attributeSet.accumulators.irregular + "\n";
+            
+            Debug.Log(loggingOutput);
+        }
+        
+        private static void PostHelpMSG()
+        {
+            Debug.Log(
+                "[HELP INFO GUIDE]\n" +
+                "Supported base 10 Roman Numeral glyphs: " +
+                "M = 1000; D = 500; C = 100; L = 50; X = 10; V = 5; I = 1" +
+                "Lower case converts to upper." +
+                "Unsupported glyphs are evaluated as 0 (ZERO)." +
+                "\n[Subtractive notation] is lower value before higher value, input left to right left to right in " +
+                "single pair regular subtractive notation only (e.g. IV = 4, CD = 400), " +
+                "[(ISN) Irregular Subtractive Notation] works for small values, but is not fully supported notation (e.g. IIIX = 7)." +
+                "Inverse order inputting will result in a regular subtractive tally." +
+                "For regular subtractive notation calculations (E.G. IVX = (-1 + -5 + 10) = 4)." +
+                "\n[Additive notation], performs simple addition on glyphs. Useful for simple numbers.\n"
+            );
+        }
+        
+        private bool IsDone()
         {
             return true;
         }
-
     }
 }
 
