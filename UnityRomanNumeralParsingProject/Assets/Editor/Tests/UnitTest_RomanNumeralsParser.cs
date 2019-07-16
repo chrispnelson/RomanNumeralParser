@@ -668,7 +668,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Act*/
             TestLocalInputString = new string(inputChars);
-            TestStoreInts = TestingRomanNumeralParser.DiassembleStringToIntTokens(TestLocalInputString);
+            TestStoreInts = TestingRomanNumeralParser.DisassembleStringToIntTokens(TestLocalInputString);
             
             for (int i = 0; i < Size; i++)
             {
@@ -772,7 +772,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Act*/
             TestLocalInputString = new string(inputChars);
-            TestStoreInts = TestingRomanNumeralParser.DiassembleStringToIntTokens(TestLocalInputString);
+            TestStoreInts = TestingRomanNumeralParser.DisassembleStringToIntTokens(TestLocalInputString);
             
             for (int i = 0; i < Size; i++)
             {
@@ -877,7 +877,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Act*/
             TestLocalInputString = new string(inputChars);
-            TestStoreInts = TestingRomanNumeralParser.DiassembleStringToIntTokens(TestLocalInputString);
+            TestStoreInts = TestingRomanNumeralParser.DisassembleStringToIntTokens(TestLocalInputString);
             
             for (int i = 0; i < Size; i++)
             {
@@ -1265,7 +1265,7 @@ namespace RomanNumeralParser.UnitTests
 
         #endregion
 
-        #region TestDiassembleStringToIntTokens
+        #region TestDisassembleStringToIntTokens
 
         [Test]
         [TestCase("m", ExpectedResult = true)]
@@ -1322,20 +1322,20 @@ namespace RomanNumeralParser.UnitTests
         [TestCase("supercalifragilisticexpialidocious", ExpectedResult = true)]
         [TestCase(@"1234567890`-=[]\;',./~!@#$%^&*()_+{}|:><?àáâäæãåāaèéêëēėęîïíīįìôöòóœøōõûüùúūÿçćčñńłßśš", ExpectedResult = true)]
         [TestCase("\"\'\0\r\n\t", ExpectedResult = true)]
-        public bool Test_DiassembleStringToIntTokens_TakeInString_ReturnListOfRawIntValues(string inputs)
+        public bool Test_DisassembleStringToIntTokens_TakeInString_ReturnListOfRawIntValues(string inputs)
         {
             /*Arrange*/
             bool isGood = true;
             
             /*Act*/
-            foreach (var LocalListIntsItem in TestingRomanNumeralParser.DiassembleStringToIntTokens(inputs))
+            foreach (var LocalListIntsItem in TestingRomanNumeralParser.DisassembleStringToIntTokens(inputs))
             {
                 isGood = (isGood && (LocalListIntsItem >= 0));
             }
             
             /*Assert*/
             Assert.IsTrue(isGood);
-            CollectionAssert.AllItemsAreInstancesOfType(TestingRomanNumeralParser.DiassembleStringToIntTokens(inputs), typeof(int));
+            CollectionAssert.AllItemsAreInstancesOfType(TestingRomanNumeralParser.DisassembleStringToIntTokens(inputs), typeof(int));
             
             return isGood;
         }

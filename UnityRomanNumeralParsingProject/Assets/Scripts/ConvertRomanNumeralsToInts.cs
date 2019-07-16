@@ -78,7 +78,7 @@ namespace RomanNumeralParser.Converter
         
             attribs.input = GetCleanedStringToken(inputsString);
             
-            attribs.numbersOutput = DiassembleStringToIntTokens(attribs.input);
+            attribs.numbersOutput = DisassembleStringToIntTokens(attribs.input);
 
             attribs.accumulators = AssembleOutput(attribs.numbersOutput);
 
@@ -94,7 +94,7 @@ namespace RomanNumeralParser.Converter
             return InputString.Replace(" ", "").ToUpper();
         }
 
-        public List<int> DiassembleStringToIntTokens(string Inputs)
+        public List<int> DisassembleStringToIntTokens(string Inputs)
         {
             List<int> retInts = new List<int>();
             char[] glyphs = Inputs.ToCharArray();
