@@ -31,14 +31,14 @@ namespace RomanNumeralParser.UnitTests
         private Dictionary<NumeralVals, char> TestingNumeralSets;
         
         private ConvertRomanNumeralsToInts TestingRomanNumeralParser;
-        private ConvertRomanNumeralsToInts.Attibutes TestingAttributes;
+        private ConvertRomanNumeralsToInts.Attributes TestingAttributes;
         private ConvertRomanNumeralsToInts.Accumulators TestingAccumulators;
         
         [SetUp]
         public void Init()
         {
             TestingRomanNumeralParser = new ConvertRomanNumeralsToInts();
-            TestingAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            TestingAttributes = new ConvertRomanNumeralsToInts.Attributes();
             TestingAccumulators = new ConvertRomanNumeralsToInts.Accumulators();
 
             TestingAttributes = TestingRomanNumeralParser.Init();
@@ -177,7 +177,7 @@ namespace RomanNumeralParser.UnitTests
         public void Test_Init_TakesNoPrameters_ReturnsInitialisedAttributes()
         {
             /*Arrange*/
-            ConvertRomanNumeralsToInts.Attibutes TestAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            ConvertRomanNumeralsToInts.Attributes TestAttributes = new ConvertRomanNumeralsToInts.Attributes();
             List<int> LocalIntList = new List<int>();
             Dictionary<ConvertRomanNumeralsToInts.Numerals, char> LocalDicSet =
                 new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
@@ -189,7 +189,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Assert*/            
             Assert.IsNotNull(TestingRomanNumeralParser.Init());
-            Assert.That(TestingRomanNumeralParser.Init(), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attibutes)));
+            Assert.That(TestingRomanNumeralParser.Init(), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attributes)));
             Assert.That(TestingRomanNumeralParser.Init().input, Is.TypeOf(typeof(string)));
             Assert.That(TestingRomanNumeralParser.Init().done, Is.TypeOf(typeof(bool)));
             Assert.That(TestingRomanNumeralParser.Init().accumulators.subtractive, Is.TypeOf(typeof(long)));
@@ -962,7 +962,7 @@ namespace RomanNumeralParser.UnitTests
             bool isGood = false;
             char[] LocalCharInputs = inputs.Replace(" ","").ToUpper().ToCharArray();
             int Size = LocalCharInputs.Length;
-            ConvertRomanNumeralsToInts.Attibutes LocalAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            ConvertRomanNumeralsToInts.Attributes LocalAttributes = new ConvertRomanNumeralsToInts.Attributes();
             
             LocalAttributes.numbersOutput = new List<int>();
             LocalAttributes.numeralPairs = new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
@@ -983,7 +983,7 @@ namespace RomanNumeralParser.UnitTests
             Assert.AreEqual(TestingAttributes.accumulators.subtractive, LocalAttributes.accumulators.subtractive);
             Assert.AreEqual(TestingAttributes.accumulators.additive, LocalAttributes.accumulators.additive);
             Assert.AreEqual(TestingAttributes.accumulators.irregular, LocalAttributes.accumulators.irregular);
-            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attibutes)));
+            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attributes)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators, Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Accumulators)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators.subtractive, Is.TypeOf(typeof(long)));            
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators.additive, Is.TypeOf(typeof(long)));
@@ -1057,7 +1057,7 @@ namespace RomanNumeralParser.UnitTests
             /*Arrange*/
             char[] LocalCharInputs = inputs.Replace(" ","").ToUpper().ToCharArray();
             int Size = LocalCharInputs.Length;
-            ConvertRomanNumeralsToInts.Attibutes LocalAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            ConvertRomanNumeralsToInts.Attributes LocalAttributes = new ConvertRomanNumeralsToInts.Attributes();
             
             LocalAttributes.numbersOutput = new List<int>();
             LocalAttributes.numeralPairs = new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
@@ -1074,7 +1074,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Assert*/
             Assert.AreEqual(TestingAttributes.accumulators.subtractive, LocalAttributes.accumulators.subtractive);
-            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attibutes)));
+            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attributes)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators, Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Accumulators)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators.subtractive, Is.TypeOf(typeof(long)));
             
@@ -1141,7 +1141,7 @@ namespace RomanNumeralParser.UnitTests
             /*Arrange*/
             char[] LocalCharInputs = inputs.Replace(" ","").ToUpper().ToCharArray();
             int Size = LocalCharInputs.Length;
-            ConvertRomanNumeralsToInts.Attibutes LocalAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            ConvertRomanNumeralsToInts.Attributes LocalAttributes = new ConvertRomanNumeralsToInts.Attributes();
             
             LocalAttributes.numbersOutput = new List<int>();
             LocalAttributes.numeralPairs = new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
@@ -1158,7 +1158,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Assert*/
             Assert.AreEqual(TestingAttributes.accumulators.additive, LocalAttributes.accumulators.additive);
-            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attibutes)));
+            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attributes)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators, Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Accumulators)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators.additive, Is.TypeOf(typeof(long)));
             
@@ -1239,7 +1239,7 @@ namespace RomanNumeralParser.UnitTests
             /*Arrange*/
             char[] LocalCharInputs = inputs.Replace(" ","").ToUpper().ToCharArray();
             int Size = LocalCharInputs.Length;
-            ConvertRomanNumeralsToInts.Attibutes LocalAttributes = new ConvertRomanNumeralsToInts.Attibutes();
+            ConvertRomanNumeralsToInts.Attributes LocalAttributes = new ConvertRomanNumeralsToInts.Attributes();
             
             LocalAttributes.numbersOutput = new List<int>();
             LocalAttributes.numeralPairs = new Dictionary<ConvertRomanNumeralsToInts.Numerals, char>();
@@ -1256,7 +1256,7 @@ namespace RomanNumeralParser.UnitTests
             
             /*Assert*/
             Assert.AreEqual(TestingAttributes.accumulators.irregular, LocalAttributes.accumulators.irregular);
-            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attibutes)));
+            Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs), Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Attributes)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators, Is.TypeOf(typeof(ConvertRomanNumeralsToInts.Accumulators)));
             Assert.That(TestingRomanNumeralParser.SendInputsToAccumulator(inputs).accumulators.irregular, Is.TypeOf(typeof(long)));
             

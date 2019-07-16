@@ -18,7 +18,7 @@ Class InputViewObject : MonoBehaviour
 ***** Tests Implemented ***** 
 Class ConvertRomanNumeralsToInts
 
-- public Attibutes Init()
+- public Attributes Init()
 - public Numerals GetNumerals(char searchChar
 - public int GetIntValue(char numeral)
 - public List<int> ConvertToInts(char[] glyphs)
@@ -28,7 +28,7 @@ Class ConvertRomanNumeralsToInts
 - public Accumulators CalculateIrregularValue(Accumulators acumulatorSet, List<int> numbersSet)
 - public List<int> DiassembleStringToIntTokens(string Inputs)
 - public Accumulators AssembleOutput(List<int> numbersSet)
-- public Attibutes SendInputsToAccumulator(string inputsString)
+- public Attributes SendInputsToAccumulator(string inputsString)
 --- Tests subtractive notation
 --- Tests additive notaiton
 --- Tests irregular subtractive notation
@@ -37,7 +37,7 @@ Class ConvertRomanNumeralsToInts
 Class ConvertRomanNumeralsToInts
 
 - private static Dictionary<Numerals, char> SetNumeralPairs()
-- private void WriteIntTokens(Attibutes attributeSet)
+- private void WriteIntTokens(Attributes attributeSet)
 - private static void PostHelpMSG()
 - private bool IsDone()
 

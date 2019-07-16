@@ -29,7 +29,7 @@ namespace RomanNumeralParser.Converter
             public long irregular;
         }
         
-        public struct Attibutes
+        public struct Attributes
         {
             public List<int> numbersOutput { get; set; }
             public Dictionary<Numerals, char> numeralPairs { get; set; }
@@ -53,9 +53,9 @@ namespace RomanNumeralParser.Converter
 
         #region PublicCRNMethods
         
-        public Attibutes Init()
+        public Attributes Init()
         {
-            Attibutes attribs = new Attibutes();
+            Attributes attribs = new Attributes();
             
             attribs.numbersOutput = new List<int>();
             attribs.numeralPairs = new Dictionary<Numerals, char>(); 
@@ -72,9 +72,9 @@ namespace RomanNumeralParser.Converter
             return attribs;
         }
 
-        public Attibutes SendInputsToAccumulator(string inputsString)
+        public Attributes SendInputsToAccumulator(string inputsString)
         {
-            Attibutes attribs = new Attibutes();
+            Attributes attribs = new Attributes();
         
             attribs.input = GetCleanedStringToken(inputsString);
             
@@ -274,7 +274,7 @@ namespace RomanNumeralParser.Converter
             return DictlocalSet;
         }
         
-        private void WriteIntTokens(Attibutes attributeSet)
+        private void WriteIntTokens(Attributes attributeSet)
         {
             string loggingOutput = "[RESULTS]\n";
 
