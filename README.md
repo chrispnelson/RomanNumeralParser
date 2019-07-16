@@ -16,26 +16,24 @@ Class InputViewObject : MonoBehaviour
 - public void OnSubmit()
 
 ***** Tests Implemented ***** 
-Class ConvertRomanNumeralsToInts
-
+- Class ConvertRomanNumeralsToInts
 - public Attributes Init()
 - public Numerals GetNumerals(char searchChar
 - public int GetIntValue(char numeral)
 - public List<int> ConvertToInts(char[] glyphs)
 - public string GetCleanedStringToken(string InputString = "")
-- public Accumulators CalculateSubtractiveValue(Accumulators acumulatorSet, List<int> numbersSet)
-- public Accumulators CalculateAdditiveValue(Accumulators acumulatorSet, List<int> numbersSet)
-- public Accumulators CalculateIrregularValue(Accumulators acumulatorSet, List<int> numbersSet)
+- public Accumulators CalculateSubtractiveValue(Accumulators accumulatorSet, List<int> numbersSet)
+- public Accumulators CalculateAdditiveValue(Accumulators accumulatorSet, List<int> numbersSet)
+- public Accumulators CalculateIrregularValue(Accumulators accumulatorSet, List<int> numbersSet)
 - public List<int> DiassembleStringToIntTokens(string Inputs)
 - public Accumulators AssembleOutput(List<int> numbersSet)
 - public Attributes SendInputsToAccumulator(string inputsString)
 --- Tests subtractive notation
---- Tests additive notaiton
+--- Tests additive notation
 --- Tests irregular subtractive notation
 
 **** Tests Verified Indirectly ****
-Class ConvertRomanNumeralsToInts
-
+- Class ConvertRomanNumeralsToInts
 - private static Dictionary<Numerals, char> SetNumeralPairs()
 - private void WriteIntTokens(Attributes attributeSet)
 - private static void PostHelpMSG()

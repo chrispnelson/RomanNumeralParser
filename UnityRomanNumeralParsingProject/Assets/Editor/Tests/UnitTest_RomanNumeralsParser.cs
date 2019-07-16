@@ -1409,7 +1409,6 @@ namespace RomanNumeralParser.UnitTests
         public long Test_AssembleOutput_TakesInListOfInts_ReturnsAccumulatorSubtractiveNotationValue(int[] integersSet)
         {
             /*Arrange*/
-            long LocalLong = 0;
             int Size = integersSet.Length;
             List<int> LocalListOfInts = new List<int>();
             
@@ -1458,7 +1457,6 @@ namespace RomanNumeralParser.UnitTests
         public long Test_AssembleOutput_TakesInListOfInts_ReturnsAccumulatorAdditiveNotationValue(int[] integersSet)
         {
             /*Arrange*/
-            long LocalLong = 0;
             int Size = integersSet.Length;
             List<int> LocalListOfInts = new List<int>();
             
@@ -1507,7 +1505,6 @@ namespace RomanNumeralParser.UnitTests
         public long Test_AssembleOutput_TakesInListOfInts_ReturnsAccumulatorIrregularSubtractiveNotationValue(int[] integersSet)
         {
             /*Arrange*/
-            long LocalLong = 0;
             int Size = integersSet.Length;
             List<int> LocalListOfInts = new List<int>();
             

@@ -145,14 +145,14 @@ namespace RomanNumeralParser.Converter
             return key;
         }
 
-        public Accumulators CalculateAdditiveValue(Accumulators acumulatorSet, List<int> numbersSet)
+        public Accumulators CalculateAdditiveValue(Accumulators accumulatorSet, List<int> numbersSet)
         {
             Accumulators retAccum = new Accumulators();
             int current;
             int next;
             int Size = numbersSet.Count;
 
-            retAccum = acumulatorSet;
+            retAccum = accumulatorSet;
             
             for (current = 0; current < Size; current++)
             {
@@ -178,14 +178,14 @@ namespace RomanNumeralParser.Converter
             return retAccum;
         }
 
-        public Accumulators CalculateSubtractiveValue(Accumulators acumulatorSet, List<int> numbersSet)
+        public Accumulators CalculateSubtractiveValue(Accumulators accumulatorSet, List<int> numbersSet)
         {
             Accumulators retAccum = new Accumulators();
             int current;
             int next;
             int Size = numbersSet.Count;
 
-            retAccum = acumulatorSet;
+            retAccum = accumulatorSet;
             
             for (current = 0; current < Size; current++)
             {
@@ -211,12 +211,12 @@ namespace RomanNumeralParser.Converter
             return retAccum;
         }
 
-        public Accumulators CalculateIrregularValue(Accumulators acumulatorSet, List<int> numbersSet)
+        public Accumulators CalculateIrregularValue(Accumulators accumulatorSet, List<int> numbersSet)
         {
             Accumulators retAccum;
             List<int> sortedSet = new List<int>();
             
-            retAccum = acumulatorSet;
+            retAccum = accumulatorSet;
             
             foreach (var sourceSetItem in numbersSet)
             {
