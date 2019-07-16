@@ -12,14 +12,14 @@ public class InputViewObject : MonoBehaviour
     public Text OutputField;
 
     public ConvertRomanNumeralsToInts romanNumeralParser;
-    private ConvertRomanNumeralsToInts.Attibutes attributes;
+    private ConvertRomanNumeralsToInts.Attributes attributes;
     private List<string> outputs;
     private string InputTextData;
 
     private void Start()
     {
         romanNumeralParser = new ConvertRomanNumeralsToInts();
-        attributes = new ConvertRomanNumeralsToInts.Attibutes();
+        attributes = new ConvertRomanNumeralsToInts.Attributes();
 
         attributes = romanNumeralParser.Init();
     }
