@@ -51,6 +51,8 @@ namespace RomanNumeralParser.Converter
         /////// PUBLIC  ////////
         ////////////////////////
 
+        #region PublicCRNMethods
+        
         public Attibutes Init()
         {
             Attibutes attribs = new Attibutes();
@@ -249,10 +251,14 @@ namespace RomanNumeralParser.Converter
             return retAccum;
         }
         
+        #endregion
+
         ////////////////////////
         /////// PRIVATE  ///////
         ////////////////////////
-        
+
+        #region PrivateCRNMethods
+
         private static Dictionary<Numerals, char> SetNumeralPairs()
         {
             Dictionary<Numerals, char> DictlocalSet = new Dictionary<Numerals, char>(); 
@@ -310,6 +316,9 @@ namespace RomanNumeralParser.Converter
         {
             return true;
         }
+        
+
+        #endregion
     }
 }
 
