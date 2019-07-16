@@ -25,7 +25,7 @@ Class InputViewObject : MonoBehaviour
 - public Accumulators CalculateSubtractiveValue(Accumulators accumulatorSet, List<int> numbersSet)
 - public Accumulators CalculateAdditiveValue(Accumulators accumulatorSet, List<int> numbersSet)
 - public Accumulators CalculateIrregularValue(Accumulators accumulatorSet, List<int> numbersSet)
-- public List<int> DiassembleStringToIntTokens(string Inputs)
+- public List<int> DisassembleStringToIntTokens(string Inputs)
 - public Accumulators AssembleOutput(List<int> numbersSet)
 - public Attributes SendInputsToAccumulator(string inputsString)
 --- Tests subtractive notation
